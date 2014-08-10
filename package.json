@@ -5,7 +5,7 @@
   "main": "./lib/init",
   "version": "0.0.1",
   "description": "Lint Clojure on the fly, using clojure-x.x.x.jar",
-  "repository": "https://github.com/yhmtg/linter-clj",
+  "repository": "https://github.com/AtomLinter/linter-clj",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
