@@ -3,7 +3,7 @@
   "linter-package": true,
   "activationEvents": [],
   "main": "./lib/init",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Lint Clojure on the fly, using clojure-x.x.x.jar",
   "repository": "https://github.com/AtomLinter/linter-clojure",
   "license": "MIT",
