@@ -13,3 +13,5 @@ You can configure linter-clj by editing ~/.atom/config.cson (choose Open Your Co
   'cljExecutablePath': 'D:\\downloads\\clojure-1.6.0\\clojure-1.6.0.jar' # <- point directly to the jar file
   'javaExecutablePath': 'C:\\Program Files (x86)\\Java\\jdk1.7.0\\bin' # to find java in this directory
 ```
+## Donation
+[![Share the love!](https://chewbacco-stuff.s3.amazonaws.com/donate.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KXUYS4ARNHCN8)
