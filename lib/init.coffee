@@ -1,7 +1,7 @@
 module.exports =
   configDefaults:
     javaExecutablePath: ''
-    cljExecutablePath: ''
+    clojureExecutablePath: ''
 
   activate: ->
-    console.log 'activate linter-clj'
+    console.log 'activate linter-clojure'
