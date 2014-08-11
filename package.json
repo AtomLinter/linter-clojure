@@ -1,5 +1,5 @@
 {
-  "name": "linter-clj",
+  "name": "linter-clojure",
   "linter-package": true,
   "activationEvents": [],
   "main": "./lib/init",
