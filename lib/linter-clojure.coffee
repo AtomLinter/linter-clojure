@@ -33,4 +33,4 @@ class LinterClojure extends Linter
     atom.config.unobserve 'linter-clojure.javaExecutablePath'
     atom.config.unobserve 'linter-clojure.clojureExecutablePath'
 
-module.exports = LinterCLJ
+module.exports = LinterClojure
