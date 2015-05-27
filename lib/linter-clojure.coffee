@@ -1,4 +1,3 @@
-{exec, child} = require 'child_process'
 linterPath = atom.packages.getLoadedPackage("linter").path
 Linter = require "#{linterPath}/lib/linter"
 
@@ -23,14 +22,15 @@ class LinterClojure extends Linter
   constructor: (editor) ->
     super(editor)
 
-    atom.config.observe 'linter-clojure.javaExecutablePath', =>
+    @javaSubscription = atom.config.observe 'linter-clojure.javaExecutablePath', =>
       @executablePath = atom.config.get 'linter-clojure.javaExecutablePath'
 
-    atom.config.observe 'linter-clojure.clojureExecutablePath', =>
+    @clojureSubscription = atom.config.observe 'linter-clojure.clojureExecutablePath', =>
       @cmd = 'java -jar ' + atom.config.get('linter-clojure.clojureExecutablePath') + ' -i'
 
   destroy: ->
-    atom.config.unobserve 'linter-clojure.javaExecutablePath'
-    atom.config.unobserve 'linter-clojure.clojureExecutablePath'
+    super
+    @javaSubscription.dispose()
+    @clojureSubscription.dispose()
 
 module.exports = LinterClojure
