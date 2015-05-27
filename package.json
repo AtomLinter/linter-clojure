@@ -1,7 +1,6 @@
 {
   "name": "linter-clojure",
   "linter-package": true,
-  "activationEvents": [],
   "main": "./lib/init",
   "version": "0.0.4",
   "description": "Lint Clojure on the fly, using clojure-x.x.x.jar",
