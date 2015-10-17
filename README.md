@@ -25,7 +25,3 @@ You can configure linter-clojure by editing ~/.atom/config.cson (choose Open You
     clojureExecutablePath: "/Users/theusername/.m2/repository/org/clojure/clojure/1.6.0/clojure-1.6.0.jar"
     javaExecutablePath: "/usr/bin/java"
 ```
-## Donation
-[ ![Share the love!][1]](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KXUYS4ARNHCN8)
-
-[1]: https://www.paypalobjects.com/webstatic/en_US/btn/btn_donate_pp_142x27.png
