@@ -8,7 +8,7 @@ module.exports =
       default: 'clojure-x.x.x.jar'
 
   activate: ->
-    require("atom-package-deps").install("linter-clojure")
+    require('atom-package-deps').install()
 
   provideLinter: ->
     helpers = require('atom-linter')
