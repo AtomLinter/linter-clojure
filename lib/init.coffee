@@ -7,6 +7,9 @@ module.exports =
       type: 'string'
       default: 'clojure-x.x.x.jar'
 
+  activate: ->
+    require("atom-package-deps").install("linter-clojure")
+
   provideLinter: ->
     helpers = require('atom-linter')
     regex = 'RuntimeException:(?<message>.*), compiling:(.*):(?<line>\\d+):(?<col>\\d+)'

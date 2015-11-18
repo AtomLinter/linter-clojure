@@ -4,7 +4,7 @@ linter-clojure
 This linter plugin for [Linter](https://github.com/AtomLinter/Linter) provides an interface to [clojure-x.x.x.jar](http://clojure.org/). It will be used with files that have the “Clojure” syntax.
 
 ## Installation
-Linter package must be installed in order to use this plugin. If Linter is not installed, please follow the instructions [here](https://github.com/AtomLinter/Linter).
+On first activation the plugin will install all dependencies automatically, you no longer have to worry about installing Linter.
 
 ## Settings
 You can configure linter-clojure by editing ~/.atom/config.cson (choose Open Your Config in Atom menu):
