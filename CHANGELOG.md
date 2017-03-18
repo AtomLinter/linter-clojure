@@ -1,5 +1,29 @@
 # Change Log
 
+## [v1.1.3](https://github.com/AtomLinter/linter-clojure/tree/v1.1.3) (2017-03-18)
+[Full Changelog](https://github.com/AtomLinter/linter-clojure/compare/v1.1.2...v1.1.3)
+
+**Implemented enhancements:**
+
+- Update atom-linter to the latest version 🚀 [\#50](https://github.com/AtomLinter/linter-clojure/pull/50) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update atom-linter to version 8.0.0 🚀 [\#48](https://github.com/AtomLinter/linter-clojure/pull/48) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- Update atom-linter to version 6.0.0 🚀 [\#43](https://github.com/AtomLinter/linter-clojure/pull/43) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- atom-linter@4.6.1 untested ⚠️ [\#36](https://github.com/AtomLinter/linter-clojure/pull/36) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- Update atom-package-deps to version 4.0.1 🚀 [\#31](https://github.com/AtomLinter/linter-clojure/pull/31) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- atom-linter@4.5.0 untested ⚠️ [\#29](https://github.com/AtomLinter/linter-clojure/pull/29) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- atom-package-deps@3.0.8 untested ⚠️ [\#27](https://github.com/AtomLinter/linter-clojure/pull/27) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- atom-linter@4.4.0 untested ⚠️ [\#26](https://github.com/AtomLinter/linter-clojure/pull/26) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- atom-linter@4.3.4 untested ⚠️ [\#25](https://github.com/AtomLinter/linter-clojure/pull/25) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- atom-linter@4.3.1 untested ⚠️ [\#21](https://github.com/AtomLinter/linter-clojure/pull/21) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- Force EOL to be LF [\#20](https://github.com/AtomLinter/linter-clojure/pull/20) ([Arcanemagus](https://github.com/Arcanemagus))
+- atom-linter@4.3.0 untested ⚠️ [\#19](https://github.com/AtomLinter/linter-clojure/pull/19) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+- atom-package-deps@3.0.7 untested ⚠️ [\#18](https://github.com/AtomLinter/linter-clojure/pull/18) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
+
+**Fixed bugs:**
+
+- Disable lintOnFly [\#34](https://github.com/AtomLinter/linter-clojure/issues/34)
+- Don't mark as lintOnFly compatible [\#52](https://github.com/AtomLinter/linter-clojure/pull/52) ([Arcanemagus](https://github.com/Arcanemagus))
+
 ## [v1.1.2](https://github.com/AtomLinter/linter-clojure/tree/v1.1.2) (2015-12-30)
 [Full Changelog](https://github.com/AtomLinter/linter-clojure/compare/v1.1.1...v1.1.2)
 
