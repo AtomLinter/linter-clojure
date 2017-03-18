@@ -1,38 +1,28 @@
 # Change Log
 
-## [1.1.2](https://github.com/AtomLinter/linter-clojure/tree/1.1.2) (2015-12-30)
-[Full Changelog](https://github.com/AtomLinter/linter-clojure/compare/v1.1.1...1.1.2)
+## [v1.1.2](https://github.com/AtomLinter/linter-clojure/tree/v1.1.2) (2015-12-30)
+[Full Changelog](https://github.com/AtomLinter/linter-clojure/compare/v1.1.1...v1.1.2)
 
-**Closed issues:**
+**Implemented enhancements:**
 
-- ClojureScript [\#16](https://github.com/AtomLinter/linter-clojure/issues/16)
 - Install `linter` automatically. [\#7](https://github.com/AtomLinter/linter-clojure/issues/7)
-
-**Merged pull requests:**
-
 - atom-linter@4.2.0 untested ⚠️ [\#17](https://github.com/AtomLinter/linter-clojure/pull/17) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
 - Update atom-linter to version 4.1.1 🚀 [\#15](https://github.com/AtomLinter/linter-clojure/pull/15) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
 
 ## [v1.1.1](https://github.com/AtomLinter/linter-clojure/tree/v1.1.1) (2015-11-22)
 [Full Changelog](https://github.com/AtomLinter/linter-clojure/compare/v1.1.0...v1.1.1)
 
-**Closed issues:**
-
-- Failed to activate the linter-clojure package [\#12](https://github.com/AtomLinter/linter-clojure/issues/12)
-
 ## [v1.1.0](https://github.com/AtomLinter/linter-clojure/tree/v1.1.0) (2015-11-18)
 [Full Changelog](https://github.com/AtomLinter/linter-clojure/compare/v1.0.0...v1.1.0)
 
-**Closed issues:**
-
-- Uncaught Error: spawn EACCES [\#9](https://github.com/AtomLinter/linter-clojure/issues/9)
-- Uncaught Error: spawn EACCES [\#8](https://github.com/AtomLinter/linter-clojure/issues/8)
-- Object.activate is deprecated. [\#5](https://github.com/AtomLinter/linter-clojure/issues/5)
-- Upcoming linter changes [\#4](https://github.com/AtomLinter/linter-clojure/issues/4)
-
-**Merged pull requests:**
+**Implemented enhancements:**
 
 - Install 'linter' automatically upon first install [\#11](https://github.com/AtomLinter/linter-clojure/pull/11) ([trevershick](https://github.com/trevershick))
+
+**Fixed bugs:**
+
+- Uncaught Error: spawn EACCES [\#9](https://github.com/AtomLinter/linter-clojure/issues/9)
+- Upcoming linter changes [\#4](https://github.com/AtomLinter/linter-clojure/issues/4)
 - Update readme to address \#9 [\#10](https://github.com/AtomLinter/linter-clojure/pull/10) ([trevershick](https://github.com/trevershick))
 
 ## [v1.0.0](https://github.com/AtomLinter/linter-clojure/tree/v1.0.0) (2015-09-06)
@@ -45,7 +35,7 @@
 ## [v0.0.5](https://github.com/AtomLinter/linter-clojure/tree/v0.0.5) (2015-05-27)
 [Full Changelog](https://github.com/AtomLinter/linter-clojure/compare/v0.0.4...v0.0.5)
 
-**Closed issues:**
+**Fixed bugs:**
 
 - Package.getActivationCommands is deprecated. [\#3](https://github.com/AtomLinter/linter-clojure/issues/3)
 - Package.activateConfig is deprecated. [\#2](https://github.com/AtomLinter/linter-clojure/issues/2)
