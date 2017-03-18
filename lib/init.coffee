@@ -16,7 +16,7 @@ module.exports =
     provider =
       grammarScopes: ['source.clojure', 'source.clojurescript']
       scope: 'file'
-      lintOnFly: true
+      lintOnFly: false
       lint: (textEditor) =>
         filePath = textEditor.getPath()
         command = atom.config.get('linter-clojure.javaExecutablePath') or 'java'
