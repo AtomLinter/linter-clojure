@@ -27,7 +27,7 @@ module.exports =
           filePath
         ]
 
-        return helpers.exec(command, parameters, {stream: 'stderr'}).then (output) ->
+        return helpers.exec(command, parameters, {stream: 'stderr', allowEmptyStderr: true}).then (output) ->
           errors = for message in helpers.parse(output, regex, {filePath: filePath})
             message.type = 'error'
             message
