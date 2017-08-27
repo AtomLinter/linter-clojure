@@ -1,25 +1,66 @@
 {
   "name": "linter-clojure",
-  "main": "./lib/init",
+  "main": "./lib/index",
   "version": "1.1.3",
   "description": "Lint Clojure on the fly, using clojure-x.x.x.jar",
   "repository": "https://github.com/AtomLinter/linter-clojure",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": ">=1.7.0 <2.0.0"
+  },
+  "configSchema": {
+    "javaExecutablePath": {
+      "type": "string",
+      "default": "java"
+    },
+    "clojureExecutablePath": {
+      "type": "string",
+      "default": "clojure-x.x.x.jar"
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "apm test"
   },
   "providedServices": {
     "linter": {
       "versions": {
-        "1.0.0": "provideLinter"
+        "2.0.0": "provideLinter"
       }
     }
   },
   "dependencies": {
     "atom-linter": "^10.0.0",
-    "atom-package-deps": "^4.0.1"
+    "atom-package-deps": "^4.6.0"
   },
   "package-deps": [
-    "linter"
-  ]
+    "linter:2.0.0"
+  ],
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.2",
+    "eslint-plugin-import": "^2.7.0",
+    "jasmine-fix": "^1.3.0"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "global-require": "off",
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "atom"
+          ]
+        }
+      ]
+    },
+    "globals": {
+      "atom": true
+    },
+    "env": {
+      "node": true,
+      "browser": true
+    }
+  }
 }
