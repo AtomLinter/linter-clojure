@@ -1,11 +1,29 @@
 # Change Log
 
+## [v1.2.0](https://github.com/AtomLinter/linter-clojure/tree/v1.2.0) (2017-08-27)
+[Full Changelog](https://github.com/AtomLinter/linter-clojure/compare/v1.1.3...v1.2.0)
+
+**Implemented enhancements:**
+
+- Implement specs [\#23](https://github.com/AtomLinter/linter-clojure/issues/23)
+- Add CircleCI 2.0 configuration [\#59](https://github.com/AtomLinter/linter-clojure/pull/59) ([Arcanemagus](https://github.com/Arcanemagus))
+- Rewrite in JS [\#57](https://github.com/AtomLinter/linter-clojure/pull/57) ([Arcanemagus](https://github.com/Arcanemagus))
+- Update atom-linter to version 10.0.0 🚀 [\#53](https://github.com/AtomLinter/linter-clojure/pull/53) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
+**Fixed bugs:**
+
+- Empty stderr throws and error and blocks linter's code-checking pipe [\#56](https://github.com/AtomLinter/linter-clojure/issues/56)
+- Fails to lint with :requires [\#51](https://github.com/AtomLinter/linter-clojure/issues/51)
+- Handle FileNotFound Exceptions [\#58](https://github.com/AtomLinter/linter-clojure/pull/58) ([Arcanemagus](https://github.com/Arcanemagus))
+- Rewrite in JS [\#57](https://github.com/AtomLinter/linter-clojure/pull/57) ([Arcanemagus](https://github.com/Arcanemagus))
+- Allow empty stderr [\#55](https://github.com/AtomLinter/linter-clojure/pull/55) ([ehteqx](https://github.com/ehteqx))
+
 ## [v1.1.3](https://github.com/AtomLinter/linter-clojure/tree/v1.1.3) (2017-03-18)
 [Full Changelog](https://github.com/AtomLinter/linter-clojure/compare/v1.1.2...v1.1.3)
 
 **Implemented enhancements:**
 
-- Update atom-linter to the latest version 🚀 [\#50](https://github.com/AtomLinter/linter-clojure/pull/50) ([greenkeeper[bot]](https://github.com/integration/greenkeeper))
+- Update atom-linter to version 9.0.0 🚀 [\#50](https://github.com/AtomLinter/linter-clojure/pull/50) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
 - Update atom-linter to version 8.0.0 🚀 [\#48](https://github.com/AtomLinter/linter-clojure/pull/48) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
 - Update atom-linter to version 6.0.0 🚀 [\#43](https://github.com/AtomLinter/linter-clojure/pull/43) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
 - atom-linter@4.6.1 untested ⚠️ [\#36](https://github.com/AtomLinter/linter-clojure/pull/36) ([greenkeeperio-bot](https://github.com/greenkeeperio-bot))
