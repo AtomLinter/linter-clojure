@@ -64,7 +64,7 @@ describe('The Clojure provider for Linter', () => {
     expect(messages[0].location.position).toEqual([[0, 0], [0, 4]]);
   });
 
-  fit('properly reports FileNotFoundException errors', async () => {
+  it('properly reports FileNotFoundException errors', async () => {
     const editor = await atom.workspace.open(notFoundPath);
     const messages = await lint(editor);
 
