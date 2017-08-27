@@ -12,6 +12,7 @@ const fixturePath = join(__dirname, 'fixtures');
 const emptyPath = join(fixturePath, 'empty.clj');
 const goodPath = join(fixturePath, 'good.clj');
 const badPath = join(fixturePath, 'bad.clj');
+const notFoundPath = join(fixturePath, 'notFound.clj');
 
 describe('The Clojure provider for Linter', () => {
   beforeEach(async () => {
@@ -52,7 +53,7 @@ describe('The Clojure provider for Linter', () => {
     expect(atom.notifications.addError).toHaveBeenCalledWith(message, options);
   });
 
-  it('properly reports errors found', async () => {
+  it('properly reports RuntimeException errors', async () => {
     const editor = await atom.workspace.open(badPath);
     const messages = await lint(editor);
 
@@ -61,6 +62,17 @@ describe('The Clojure provider for Linter', () => {
     expect(messages[0].excerpt).toBe('Unable to resolve symbol: xyz in this context');
     expect(messages[0].location.file).toBe(badPath);
     expect(messages[0].location.position).toEqual([[0, 0], [0, 4]]);
+  });
+
+  fit('properly reports FileNotFoundException errors', async () => {
+    const editor = await atom.workspace.open(notFoundPath);
+    const messages = await lint(editor);
+
+    expect(atom.notifications.addError).not.toHaveBeenCalled();
+    expect(messages[0].severity).toBe('error');
+    expect(messages[0].excerpt).toBe('Could not locate guestbook/layout__init.class or guestbook/layout.clj on classpath.');
+    expect(messages[0].location.file).toBe(notFoundPath);
+    expect(messages[0].location.position).toEqual([[0, 0], [0, 3]]);
   });
 
   it('finds nothing wrong with an empty file', async () => {
