@@ -6,7 +6,7 @@ import { it, fit, wait, beforeEach, afterEach } from 'jasmine-fix';
 import linterClojure from '../lib';
 
 const linterProvider = linterClojure.provideLinter();
-const lint = linterProvider.lint;
+const { lint } = linterProvider;
 
 const fixturePath = join(__dirname, 'fixtures');
 const emptyPath = join(fixturePath, 'empty.clj');
@@ -27,12 +27,10 @@ describe('The Clojure provider for Linter', () => {
   });
 
   it('should be in the packages list', () =>
-    expect(atom.packages.isPackageLoaded('linter-clojure')).toBe(true),
-  );
+    expect(atom.packages.isPackageLoaded('linter-clojure')).toBe(true));
 
   it('should be an active package', () =>
-    expect(atom.packages.isPackageActive('linter-clojure')).toBe(true),
-  );
+    expect(atom.packages.isPackageActive('linter-clojure')).toBe(true));
 
   it('finds nothing wrong with a good file', async () => {
     const editor = await atom.workspace.open(goodPath);
