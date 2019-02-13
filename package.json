@@ -42,6 +42,21 @@
     "eslint-plugin-import": "^2.7.0",
     "jasmine-fix": "^1.3.0"
   },
+  "renovate": {
+    "extends": [
+      "config:base"
+    ],
+    "semanticCommits": true,
+    "rangeStrategy": "pin",
+    "packageRules": [
+      {
+        "packagePatterns": [
+          "^eslint"
+        ],
+        "groupName": "ESLint packages"
+      }
+    ]
+  },
   "eslintConfig": {
     "extends": "airbnb-base",
     "rules": {
