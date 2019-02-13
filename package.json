@@ -1,6 +1,7 @@
 {
   "name": "linter-clojure",
   "main": "./lib/index",
+  "private": true,
   "version": "1.2.0",
   "description": "Lint Clojure on the fly, using clojure-x.x.x.jar",
   "repository": "https://github.com/AtomLinter/linter-clojure",
