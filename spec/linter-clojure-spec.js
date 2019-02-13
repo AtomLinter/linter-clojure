@@ -1,8 +1,10 @@
 'use babel';
 
 import { join } from 'path';
-// eslint-disable-next-line no-unused-vars
-import { it, fit, wait, beforeEach, afterEach } from 'jasmine-fix';
+import {
+  // eslint-disable-next-line no-unused-vars
+  it, fit, wait, beforeEach, afterEach,
+} from 'jasmine-fix';
 import linterClojure from '../lib';
 
 const linterProvider = linterClojure.provideLinter();
@@ -26,11 +28,13 @@ describe('The Clojure provider for Linter', () => {
     spyOn(atom.notifications, 'addError');
   });
 
-  it('should be in the packages list', () =>
-    expect(atom.packages.isPackageLoaded('linter-clojure')).toBe(true));
+  it('should be in the packages list', () => {
+    expect(atom.packages.isPackageLoaded('linter-clojure')).toBe(true);
+  });
 
-  it('should be an active package', () =>
-    expect(atom.packages.isPackageActive('linter-clojure')).toBe(true));
+  it('should be an active package', () => {
+    expect(atom.packages.isPackageActive('linter-clojure')).toBe(true);
+  });
 
   it('finds nothing wrong with a good file', async () => {
     const editor = await atom.workspace.open(goodPath);
